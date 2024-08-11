@@ -18,6 +18,8 @@ const ChatRoom = () => {
   const [formValue, setFormValue] = useState('');
   const navigate = useNavigate();
 
+  
+
 
   // console.log("1 : " ,messages);
 
@@ -86,7 +88,7 @@ const ChatRoom = () => {
         </button>
       </header>
 
-      <main  className=" bg-custom-image border-2 flex overflow-y-auto h-96 flex-col items-center w-full  mx-auto bg-white p-5 rounded shadow-md  ">
+      <main  className="  bg-custom-image flex overflow-y-auto h-96 flex-col items-center w-full   rounded shadow-md  ">
         {messages.map((msg) => (
           <ChatMessage key={msg.id} message={msg}  />
         ))}
